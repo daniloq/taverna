@@ -1,17 +1,23 @@
 %nav
   .wrapper
     .logo
-      = image_tag "images/taverna.png"
+      = image_tag 'images/taverna.png'
     %ul
-      %li Menus
-      %li About
-      %li On the Go
-      %li Special Events
-      %li Gift Cards
-      %li Visit
+      %li
+        = link_to 'Menus'
+      %li
+        = link_to 'About'
+      %li
+        = link_to 'On the Go'
+      %li
+        = link_to 'Special Events'
+      %li
+        = link_to 'Gift Cards'
+      %li
+        = link_to 'Visit'
     .hours
       Today's Hours
       %span 11am-10pm
     .info
       904.398.3005
-      = link_to "contact@tavernasanmarco.com", "mailto:contact@tavernasanmarco.com"
+      = link_to 'contact@tavernasanmarco.com', 'mailto:contact@tavernasanmarco.com'

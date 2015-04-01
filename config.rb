@@ -14,19 +14,19 @@
 # Per-page layout changes:
 #
 # With no layout
-# page "/path/to/file.html", :layout => false
+# page '/path/to/file.html', :layout => false
 #
 # With alternative layout
-# page "/path/to/file.html", :layout => :otherlayout
+# page '/path/to/file.html', :layout => :otherlayout
 #
 # A path which all have the same layout
 # with_layout :admin do
-#   page "/admin/*"
+#   page '/admin/*'
 # end
 
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
-# proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
-#  :which_fake_page => "Rendering a fake page with a local variable" }
+# proxy '/this-page-has-no-template.html', '/template-file.html', :locals => {
+#  :which_fake_page => 'Rendering a fake page with a local variable' }
 
 ###
 # Helpers
@@ -43,7 +43,7 @@
 # Methods defined in the helpers block are available in templates
 # helpers do
 #   def some_helper
-#     "Helping"
+#     'Helping'
 #   end
 # end
 
@@ -68,5 +68,5 @@ configure :build do
   # activate :relative_assets
 
   # Or use a different image path
-  # set :http_prefix, "/Content/images/"
+  # set :http_prefix, '/Content/images/'
 end
