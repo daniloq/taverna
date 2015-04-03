@@ -1,14 +1,22 @@
 nav
   background: white
-  padding: 10px 0
+  padding: 10px
   box-sizing: border-box
-  .logo, .hours, .info
-    display: inline-block
+  .wrapper
+    display: table
+    width: 100%
+    +media($medium)
+      display: block
+  .logo, .hours
+    display: table-cell
     vertical-align: middle
+    width: 33%
   .logo
     margin-right: 50px
   ul
-    display: inline-block
+    display: none
+    +media($medium)
+      display: inline-block
     li
       display: inline-block
       text-transform: uppercase
@@ -21,9 +29,16 @@ nav
         text-decoration: none
         height: 70px
         line-height: 70px
+  +media($medium)
+    padding: 10px 0
+    display: block
+    .wrappper
+    .logo, .hours
+      display: inline-block
+      width: auto
 
 .hours
-  border: 2px solid black
+  border: none
   text-align: center
   padding: 15px 8px
   box-sizing: border-box
@@ -38,12 +53,15 @@ nav
       size: 13px
       family: 'sbook', serif
     text-transform: none
+  +media($medium)
+    border: 2px solid black
 
 .info
   font:
     size: 22px
     family: 'gbold', sans-serif
   margin-left: 50px
+  display: none
   a
     font:
       size: 12px
@@ -51,3 +69,15 @@ nav
     display: block
     text-decoration: none
     color: black
+  +media($medium)
+    display: inline-block
+    vertical-align: middle
+
+.collapse-menu
+  color: black
+  font-size: 32px
+  display: table-cell
+  text-align: right
+  vertical-align: middle
+  +media($medium)
+    display: none
