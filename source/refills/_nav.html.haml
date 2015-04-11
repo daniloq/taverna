@@ -5,12 +5,6 @@
     %ul
       %li
         = link_to 'Menus', '#', class: 'dropdown-button'
-        .dropdown
-          %dl.dropdown-menu.dropdown-select
-            %dd Dropdown Menu Item
-            %dd Another Item
-            %dd Item Three
-            %dd The Last One
       %li
         = link_to 'About'
       %li
@@ -21,25 +15,11 @@
         = link_to 'Gift Cards'
       %li
         = link_to 'Visit'
-    .hours
-      Today's Hours
-      %span 11am-10pm
+    .hours.openingHours
+      -# Today's Hours
+      -# %span 11am-10pm
     .info
       904.398.3005
       = link_to 'contact@tavernasanmarco.com', 'mailto:contact@tavernasanmarco.com'
     = link_to '#', class: 'collapse-menu' do
       %i.ion-navicon-round
-
-:javascript
-  // dropdowns
-  $(document).ready(function(){
-    $(".dropdown-button").click(function() {
-      $(".dropdown-menu").toggleClass("show-menu");
-      $(".dropdown-menu > dd").click(function(){
-        $(".dropdown-menu").removeClass("show-menu");
-      });
-      $(".dropdown-menu.dropdown-select > dd").click(function() {
-        $(".dropdown-button").html($(this).html());
-      });
-    });
-  });

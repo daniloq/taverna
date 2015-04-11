@@ -3,3 +3,16 @@
 %section.hero
   %article
     Hero
+
+:javascript
+  $(function() {
+      if (OpeningHours) {
+           $.getJSON('tests/multipleWeeks_version.json', function(data) {
+              if (data) {
+                $('.openingHours').openingHours({
+                     //options goes here
+                });
+             }
+          });
+       }
+  });
