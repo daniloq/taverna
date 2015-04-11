@@ -2,17 +2,6 @@
 
 %section.hero
   %article
-    Hero
-
-:javascript
-  $(function() {
-      if (OpeningHours) {
-           $.getJSON('tests/multipleWeeks_version.json', function(data) {
-              if (data) {
-                $('.openingHours').openingHours({
-                     //options goes here
-                });
-             }
-          });
-       }
-  });
+    = image_tag 'logo.png', class: 'word-mark'
+    .arrow-container
+      = image_tag 'arrow.png'
