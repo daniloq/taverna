@@ -11,19 +11,36 @@
     height: 100%
     width: 100%
     text-align: center
+    position: relative
     > img
       max-width: 516px
       width: 100%
-
+    .ticker
+      position: absolute
+      bottom: 0
 
 .arrow-container
   position: absolute
   height: auto
   width: 100%
   left: -50%
-  bottom: 100px
+  bottom: 160px
   img
     width: 52px
     height: 51px
     position: relative
     left: 50%
+
+.ticker
+  height: 84px
+  width: 100%
+  background: white
+  color: black
+  font:
+    size: 14px
+    family: 'sbold', serif
+  line-height: 84px
+  a
+    color: black
+    display: inline-block
+    margin-left: 5px
