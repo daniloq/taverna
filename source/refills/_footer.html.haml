@@ -12,9 +12,41 @@
           = link_to "contact@tavernasanmarco.com", "mailto:contact@tavernasanmarco.com"
     %article
       %h4 Hours
+      .week
+        %dl
+          %dt Mon - Thur
+          %dd 11am - 10pm
+        %dl
+          %dt Fri
+          %dd 11am - 11pm
+        %dl
+          %dt Sat
+          %dd 10am - 11pm
+        %dl
+          %dt Sun
+          %dd 10am - 10px
+
   %section
     %article
       %h4 Location
       1986 San Marco Blvd
       %br
       Jacksonville, FL 32207
+      %figure
+        = image_tag 'images/map.png'
+    %article
+      %h4 Newsletter
+      %ul.inline
+        %li
+          %input{type: 'text', placeholder: 'Email'}
+        %li
+          %input{type: 'submit'}
+      %h4 Specials/Events/Photos
+      = link_to '#', class: 'circle-btn' do
+        %i.ion-social-facebook
+      = link_to '#', class: 'circle-btn' do
+        %i.ion-social-instagram
+      = link_to '#', class: 'circle-btn' do
+        %i.ion-social-twitter
+      %figure.footer-logo
+        = image_tag 'images/footer-logo.png'
