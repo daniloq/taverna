@@ -49,13 +49,23 @@
 .togo
   background: url('/images/russell-bg.jpg')
   background-size: cover
-  height: 768px
+  height: 528px
   min-height: 100%
   width: 100%
+  position: relative
+  background-position: 70% 100%
+  +media($medium)
+    background-position: auto
+    height: 768px
   aside
+    text-align: center
+    +media($medium)
+      text-align: left
     img
-      width: 100%
+      width: 200px
       margin-top: 80px
+      +media($medium)
+        width: 100%
     +media($medium)
       width: 430px
       height: auto
@@ -94,7 +104,9 @@
   width: 396px
   height: 396px
   text-align: center
-  display: table
+  display: none
+  +media($medium)
+    display: table
   .content
     display: table-cell
     vertical-align: middle
