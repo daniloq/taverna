@@ -1,8 +1,8 @@
 nav
   background: white
-  padding: 10px
+  padding: rem(10)
   box-sizing: border-box
-  %main
+  .wrapper
     display: table
     width: 100%
     +media($medium)
@@ -12,7 +12,7 @@ nav
     vertical-align: middle
     width: 33%
   .logo
-    margin-right: 50px
+    margin-right: rem(50)
   ul
     display: none
     +media($medium)
@@ -20,17 +20,17 @@ nav
     li
       display: inline-block
       text-transform: uppercase
-      margin-right: 50px
+      margin-right: rem(50)
       a
         font:
           family: 'gbold', sans-serif
-          size: 14px
+          size: rem(14)
         color: black
         text-decoration: none
-        height: 70px
-        line-height: 70px
+        height: rem(70)
+        line-height: rem(70)
   +media($medium)
-    padding: 10px 0
+    padding: rem(10) 0
     display: block
     .wrappper
     .logo, .hours
@@ -40,31 +40,31 @@ nav
 .hours
   border: none
   text-align: center
-  padding: 5px 8px
+  padding: rem(5) rem(8)
   box-sizing: border-box
   text-transform: uppercase
   font:
-    size: 12px
+    size: rem(12)
     family: 'gbold', sans-serif
   span
-    margin-top: 5px
+    margin-top: rem(5)
     display: block
     font:
-      size: 13px
+      size: rem(13)
       family: 'sbook', serif
     text-transform: none
   +media($medium)
-    border: 2px solid black
+    border: rem(2) solid black
 
 .info
   font:
-    size: 22px
+    size: rem(22)
     family: 'gbold', sans-serif
-  margin-left: 50px
+  margin-left: rem(50)
   display: none
   a
     font:
-      size: 12px
+      size: rem(12)
       family: 'sbook', serif
     display: block
     text-decoration: none
@@ -75,7 +75,7 @@ nav
 
 .collapse-menu
   color: black
-  font-size: 32px
+  font-size: rem(32)
   display: table-cell
   text-align: right
   vertical-align: middle

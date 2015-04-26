@@ -1,0 +1,59 @@
+.about
+  @extend .togo
+  background: url('/images/about-bg.jpg')  no-repeat
+  position: relative
+  background-size: cover
+  max-height: rem(612)
+  width: 100%
+  h2
+    font-size: rem(120)
+    margin: 0
+    line-height: rem(118)
+    padding: rem(100) 0 0 0
+    float: left
+  aside
+    +media($medium)
+      width: 100%
+      height: auto
+      +clearfix
+  article
+    +media($medium)
+      padding-left: 0
+      .cta
+        right: 0
+        background: $nude
+        .content
+          padding: rem(60)
+          box-sizing: border-box
+          vertical-align: top
+
+.main-content
+  background: white
+  position: relative
+  padding: rem(80) 0
+  article
+    height: 100%
+    +media($medium)
+      +span-columns(8)
+      padding-right: rem(80)
+      box-sizing: border-box
+    h5
+      margin-bottom: rem(5)
+    small
+      font-size: rem(18)
+      i
+        display: block
+        font-family: 'sbold', serif
+      a
+        color: $yellow
+        text-decoration: none
+    ul
+      +clearfix
+      li
+        margin-right: 0
+        +media($medium)
+          +span-columns(6)
+          margin-right: 0
+  aside
+    +media($medium)
+      +span-columns(4)

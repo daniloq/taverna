@@ -8,7 +8,7 @@
     = partial 'refills/ticker'
 
 %section.menus
-  %main
+  .wrapper
     %header
       %h2 Menus
     %aside
@@ -35,8 +35,8 @@
           %span Happy
           = image_tag 'images/happyhour-thumb.png'
 
-%section.banner.togo
-  %main
+%section.togo
+  .wrapper
     %aside
       = image_tag 'images/togo-logo.png'
     %article
@@ -56,8 +56,8 @@
             Learn More
             .right-caret
 
-%section.banner.private-dining
-  %main
+%section.private-dining
+  .wrapper
     %aside
       %h2
         Private
@@ -76,5 +76,7 @@
           = link_to '#' do
             Learn More
             .right-caret
+
+= partial 'refills/opentable'
 
 = partial 'refills/footer'

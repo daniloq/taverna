@@ -3,12 +3,12 @@ footer.footer
   position: relative
   color: white
   +media($medium)
-    padding: 100px 0
+    padding: rem(100) 0
   section
     +outer-container
     font:
-      size: 28px
-    line-height: 34px
+      size: rem(28)
+    line-height: rem(34)
   article
     +media($medium)
       +span-columns(6)
@@ -17,49 +17,49 @@ footer.footer
   dl
     dt
       font:
-        size: 14px
+        size: rem(14)
         family: 'gbold', sans-serif
         weight: normal
       text-transform: uppercase
     dd
-      margin: 0 0 30px 0
+      margin: 0 0 rem(30) 0
     a
       color: white
       text-decoration: none
   .week
     display: inline-block
     width: 100%
-    border: 2px solid white
-    max-width: 400px
-    padding: 25px 50px
+    border: rem(2) solid white
+    max-width: rem(400)
+    padding: rem(25) rem(50)
     box-sizing: border-box
     dl
       dt, dd
         display: inline-block
       dt
         font:
-          size: 20px
+          size: rem(20)
           family: 'gbold', serif
         text-align: right
-        min-width: 129px
+        min-width: rem(129)
       dd
         font:
           family: 'sbook', sans-serif
-          size: 22px
+          size: rem(22)
         text-align: right
-        margin: 0 0 0px 30px
+        margin: 0 0 rem(0) rem(30)
 
   figure
-    max-width: 400px
+    max-width: rem(400)
     height: auto
-    border: 2px solid white
-    margin-top: 30px
+    border: rem(2) solid white
+    margin-top: rem(30)
     img
       width: 100%
     &.footer-logo
       border: none
-      max-width: 344px
+      max-width: rem(344)
       height: auto
-      margin-top: 60px
+      margin-top: rem(60)
   .circle-btn
-    margin-right: 30px
+    margin-right: rem(30)

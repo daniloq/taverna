@@ -1,12 +1,13 @@
 %nav
-  %main
+  .wrapper
     .logo
-      = image_tag 'images/taverna.png'
+      = link_to '/' do
+        = image_tag 'images/taverna.png'
     %ul
       %li
         = link_to 'Menus', '#', class: 'dropdown-button'
       %li
-        = link_to 'About'
+        = link_to 'About', '/about.html'
       %li
         = link_to 'On the Go'
       %li
