@@ -47,6 +47,10 @@
       a
         color: $yellow
         text-decoration: none
+    p
+      a
+        color: $yellow
+        text-decoration: none
     ul
       +clearfix
       li
@@ -55,5 +59,26 @@
           +span-columns(6)
           margin-right: 0
   aside
+    border: rem(2) solid black
+    padding: rem(30)
+    box-sizing: border-box
+    p
+      a
+        color: $yellow
+        text-decoration: none
+    h3
+      margin: 0 0 rem(20) 0
+      font:
+        family: 'gbold', sans-serif
+        size: rem(36)
+    dl
+      margin-bottom: rem(30)
+      dt
+        font:
+          family: 'sbold'
+      dd
+        margin: 0 0 0 rem(20)
+        display: list-item
+        list-style: disc
     +media($medium)
       +span-columns(4)
