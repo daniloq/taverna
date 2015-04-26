@@ -1,5 +1,6 @@
 //= require 'moment'
 //= require 'OpeningHours'
+//= require 'instafeed'
 //= require_self
 
 $(function() {

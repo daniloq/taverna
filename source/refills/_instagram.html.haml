@@ -1,9 +1,21 @@
 %section.instagram
   .wrapper
-    %ul.inline
-      %li
-        = link_to '#', class: 'circle-btn' do
-          %i.ion-social-instagram
-      %li
-        Some events from our
-        =link_to 'instagram', '#'
+    %p
+      = link_to '#', class: 'circle-btn' do
+        %i.ion-social-instagram
+      Some events from our
+      =link_to 'instagram', '#'
+    #instafeed
+
+:javascript
+  if ($('#instafeed').length > 0) {
+    var feed = new Instafeed({
+      get: 'user',
+      userId: 1436261285,
+      accessToken: '1436261285.467ede5.f2683e8e8a5a46dab3f62346ce18cd78',
+      limit: 8,
+      sortBy: 'random',
+      resolution: 'low_resolution'
+    });
+    feed.run();
+  }
