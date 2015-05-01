@@ -20,26 +20,35 @@
       bottom: 0
 
 .arrow-container
-  position: absolute
-  height: auto
-  width: 100%
-  left: -50%
-  bottom: rem(160)
-  img
-    width: rem(52)
-    height: rem(51)
-    position: relative
-    left: 50%
+  display: none
+  +media($medium)
+    display: block
+    position: absolute
+    height: auto
+    width: 100%
+    left: -50%
+    bottom: rem(160)
+    img
+      width: rem(52)
+      height: rem(51)
+      position: relative
+      left: 50%
 
 .ticker
-  height: rem(84)
+  min-height: rem(84)
   width: 100%
   background: white
   color: black
+  display: table
   font:
-    size: 14px
+    size: rem(14)
     family: 'sbold', serif
-  line-height: rem(84)
+  line-height: rem(18)
+  span
+    display: table-cell
+    vertical-align: middle
+    height: auto
+    width: 100%
   a
     color: black
     display: inline-block
@@ -60,16 +69,15 @@
     height: rem(768)
   aside
     text-align: center
+    padding: rem(30)
     +media($medium)
       text-align: left
-    img
-      width: rem(200)
-      margin-top: rem(80)
-      +media($medium)
-        width: 100%
-    +media($medium)
       width: rem(430)
       height: auto
+
+    img
+      width: 100%
+      margin-top: rem(80)
   article
     +media($medium)
       padding-left: rem(250)
