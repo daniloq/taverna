@@ -5,13 +5,19 @@
         = image_tag 'images/taverna.png'
     %ul
       %li
-        = link_to 'Menus', '#', class: 'dropdown-button'
+        = link_to 'Menus', '#'
       %li
         = link_to 'About', '/about.html'
       %li
         = link_to 'On the Go'
       %li
-        = link_to 'Special Events'
+        .ui.dropdown
+          .text Special Events
+          .menu
+            .item
+              = link_to 'Private Dining', '/private-dining.html'
+            .item
+              = link_to 'Catering', '/catering.html'
       %li
         = link_to 'Gift Cards'
       %li
@@ -24,3 +30,9 @@
       = link_to 'contact@tavernasanmarco.com', 'mailto:contact@tavernasanmarco.com'
     = link_to '#', class: 'collapse-menu' do
       %i.ion-navicon-round
+
+:javascript
+  // Dropdowns
+  $('.ui.dropdown')
+    .dropdown()
+  ;
