@@ -1,0 +1,82 @@
+.dinner
+  @extend .togo
+  background: url('/images/dinner-bg.jpg')  no-repeat
+  position: relative
+  background-size: cover
+  max-height: rem(612)
+  width: 100%
+  h2
+    font-size: rem(120)
+    margin: 0
+    line-height: rem(118)
+    padding: rem(100) 0 0 0
+    float: left
+  article
+    position: relative
+    +media($medium)
+      padding-left: 0
+      .cta
+        right: 0
+        background: $nude
+        .content
+          padding: rem(60)
+          box-sizing: border-box
+          vertical-align: top
+      figure
+        +span-columns(6)
+        &:nth-of-type(2)
+          padding-left: rem(10)
+      .stamp
+        width: rem(267)
+        height: rem(268)
+        position: absolute
+        bottom: 0
+        right: 0
+        top: 710px
+        z-index: 0
+  .menu
+    margin-bottom: rem(30)
+    width: 100%
+    position: relative
+    z-index: 1
+  aside
+    border: none
+    padding: 0
+
+.menu-nav
+  padding: 0
+  ul
+    margin: 0
+    li
+      display: block
+      +clearfix
+      a
+        font:
+          family: 'sbold'
+          size: rem(48)
+        height: auto
+        text-transform: none
+        display: inline-block
+        color: white
+        width: 100%
+        padding: rem(20) rem(40)
+        box-sizing: border-box
+        background: #908D87
+        line-height: normal
+        border-bottom: rem(1) solid white
+        position: relative
+        &:hover
+          background: black
+        &.active
+          background: black
+          &:before
+            content: ''
+            width: 0
+            height: 0
+            border-top: rem(50) solid transparent
+            border-bottom: rem(50) solid transparent
+            border-right: rem(50) solid black
+            display: block
+            position: absolute
+            left: rem(-50)
+            top: 0

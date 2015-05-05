@@ -4,7 +4,7 @@
   .wrapper
     %aside
       %h2
-        MENUS
+        Dinner
     %article
 
 %section.main-content
@@ -294,8 +294,24 @@
                   %p garlic, shallots, lemon
                 %td
                   8
+        = image_tag 'images/stamp.png', class: 'stamp'
     %aside
-      stuff
+      %nav.menu-nav
+        %ul
+          %li
+            = link_to 'Dinner', '/dinner.html', class: 'active'
+          %li
+            = link_to 'Lunch', '/lunch.html'
+          %li
+            = link_to 'Brunch', '/brunch.html'
+          %li
+            = link_to 'Dessert', '/dessert.html'
+          %li
+            = link_to 'Drink', '/drink.html'
+          %li
+            = link_to 'Happy Hour', '/happy-hour.html'
+          %li
+            = link_to 'On the Go', '/togo.html'
 
 
 = partial 'refills/opentable'
