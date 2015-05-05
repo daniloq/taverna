@@ -1,0 +1,179 @@
+= partial 'refills/nav'
+
+%section.drink
+  .wrapper
+    %aside
+      %h2
+        Drink
+    %article
+
+%section.main-content
+  .wrapper
+    %article
+      %table.menu
+        %thead
+          %th{colspan: '2'} Craft Cocktails
+        %tbody
+          %tr
+            %td
+              %h5
+                Moscow Mule
+              %p
+                New Amsterdam Vodka, muddled ginger, lime juice, house-made ginger syrup, soda
+            %td
+              10
+            %tr
+              %td
+                %h5
+                  SOUTHSIDE
+                %p
+                  Plymouth Gin, muddled lemon, fresh mint, house-made lemon syrup
+                  %br
+                  %i
+                    %strong WESTSIDE
+                    with New Amsterdam Vodka
+                  %br
+                    %i
+                      %strong SOUTHBANK
+                      with Medley Bros. Bourbon
+              %td
+                10
+            %tr
+              %td
+                %h5
+                  SIDECAR
+                %p
+                  Laird’s Applejack, Bols Triple Sec, lemon juice
+                  %br
+                  %i
+                    %strong DINGY
+                    with Pyrat Aged Caribbean Rum
+              %td
+                10
+            %tr
+              %td
+                %h5
+                  Collins
+                %p
+                  Spirit of choice, muddled lemon, Florida cane sugar, soda
+                  %br
+                  %i
+                    %strong
+                      VODKA
+                    with Hangar One
+                  %br
+                  %i
+                    %strong Gin
+                    with Plymouth
+                  %br
+                  %i
+                    %strong
+                      Whiskey
+                    with Medley Bros. Bourbon
+                  %br
+                  %i
+                    %strong
+                      TEQUILA
+                    with Camarena Reposado
+                  %br
+                  %i
+                    %strong Rum
+                    with Santa Teresa 'Claro’
+              %td
+                10
+            %tr
+              %td
+                %h5
+                  Salty Dog
+                %p
+                  Tito’s Handmade Vodka, fresh grapefruit juice, Maldon sea salt, Florida cane sugar
+              %td
+                10
+            %tr
+              %td
+                %h5
+                  ICED TEA ITALIANO
+                %p
+                  Averna Amaro, lemon juice, Prosecco
+              %td
+                10
+            %tr
+              %td
+                %h5
+                  JALISCO GIMLET
+                %p
+                  Camarena Blanco Tequila, house-made vanilla syrup, lime juice
+              %td
+                10
+            %tr
+              %td
+                %h5
+                  Ferrari
+                %p
+                  Ferarri Brut Sparkling Wine, sugar, Jerry Thomas Bitters, orange twist
+              %td
+                10
+      %table.menu
+        %thead
+          %th{colspan: '2'} House-Favorite Wines
+        %tbody
+          %tr
+            %td
+              %h5
+                EMIDIO PEPE TREBBIANO
+              %p
+                Abruzzo, Italy, 2007
+            %td
+              170
+            %tr
+              %td
+                %h5
+                  GALARDI 'TERRA DI LAVORO’
+                %p Aglianico & Piederosso, Roccamonfina, Campania, Italy, 2010
+              %td
+                90
+            %tr
+              %td
+                %h5
+                  ARGIOLAS, KOREM, ISOLE DEI NURAGHI
+                %p Bovale Sardo, Carignano & Cannonau, Sardinia, Italy, 2010
+              %td
+                70
+            %tr
+              %td
+                %h5
+                  Salmon
+                  %span GF
+                %p white beans, kale, warm olive vinaigrette
+              %td
+                25
+            %tr
+              %td
+                %h5
+                  ROBERT SINSKEY VINEYARDS, 'VIN GRIS OF PINOT NOIR'
+                %p Pinot Noir Rosé, Los Carneros, California, 2013
+              %td
+                60
+        = image_tag 'images/stamp.png', class: 'stamp'
+    %aside
+      %nav.menu-nav
+        %ul
+          %li
+            = link_to 'Dinner', '/dinner.html'
+          %li
+            = link_to 'Lunch', '/lunch.html'
+          %li
+            = link_to 'Brunch', '/brunch.html'
+          %li
+            = link_to 'Dessert', '/dessert.html'
+          %li
+            = link_to 'Drink', '/drink.html', class: 'active'
+          %li
+            = link_to 'Happy Hour', '/happy-hour.html'
+          %li
+            = link_to 'On the Go', '/togo.html'
+
+
+= partial 'refills/opentable'
+
+= partial 'refills/footer'
