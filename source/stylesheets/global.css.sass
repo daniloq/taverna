@@ -1,36 +1,8 @@
-// // Fonts
-// @import url(http://fonts.googleapis.com/css?family=Raleway:700,400,300)
-//
-// @font-face
-//   font-family: 'sbook'
-//   src: url('fonts/Sentinel-Book.eot?#iefix') format('embedded-opentype'), url('fonts/Sentinel-Book.otf') format('opentype'), url('fonts/Sentinel-Book.woff') format('woff'), url('fonts/Sentinel-Book.ttf') format('truetype'), url('fonts/Sentinel-Book.svg#Sentinel-Book') format('svg')
-//   font-weight: normal
-//   font-style: normal
-//
-// @font-face
-//   font-family: 'sbold'
-//   src: url('fonts/Sentinel-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/Sentinel-Bold.otf') format('opentype'), url('fonts/Sentinel-Bold.woff') format('woff'), url('fonts/Sentinel-Bold.ttf') format('truetype'), url('fonts/Sentinel-Bold.svg#Sentinel-Bold') format('svg')
-//   font-weight: normal
-//   font-style: normal
-//
-// @font-face
-//   font-family: 'sblack'
-//   src: url('fonts/Sentinel-Black.eot?#iefix') format('embedded-opentype'), url('fonts/Sentinel-Black.otf') format('opentype'), url('fonts/Sentinel-Black.woff') format('woff'), url('fonts/Sentinel-Black.ttf') format('truetype'), url('fonts/Sentinel-Black.svg#Sentinel-Black') format('svg')
-//   font-weight: normal
-//   font-style: normal
-//
-// @font-face
-//   font-family: 'gbold'
-//   src: url('fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/Gotham-Bold.otf') format('opentype'), url('fonts/Gotham-Bold.woff') format('woff'), url('fonts/Gotham-Bold.ttf') format('truetype'), url('fonts/Gotham-Bold.svg#Gotham-Bold') format('svg')
-//   font-weight: normal
-//   font-style: normal
-//
-// @font-face
-//   font-family: 'gblack'
-//   src: url('fonts/Gotham-Black.eot?#iefix') format('embedded-opentype'), url('fonts/Gotham-Black.otf') format('opentype'), url('fonts/Gotham-Black.woff') format('woff'), url('fonts/Gotham-Black.ttf') format('truetype'), url('fonts/Gotham-Black.svg#Gotham-Black') format('svg')
-//   font-weight: normal
-//   font-style: normal
-
+*
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  outline: none
+  box-sizing: border-box
 
 body
   font:
@@ -38,6 +10,9 @@ body
     size: 18px
     weight: 300
   line-height: 24px
+
+a
+  +transition(all 0.5s ease-in-out)
 
 .wrapper
   +outer-container

@@ -8,6 +8,8 @@
     +media($medium)
       width: rem(290)
       height: rem(290)
+    &:hover img
+      border-color: black
     span
       display: block
       font:
@@ -28,3 +30,4 @@
       height: auto
       border: rem(2) solid white
       border-radius: 50%
+      +transition(all 0.5s ease-in-out)
