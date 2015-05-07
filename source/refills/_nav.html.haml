@@ -6,7 +6,7 @@
     %ul
       %li
         .ui.dropdown
-          .text Menus
+          %span Menus
           .menu
             .item
               = link_to 'Dinner', '/dinner.html', class: 'active'
@@ -25,19 +25,19 @@
       %li
         = link_to 'About', '/about.html'
       %li
-        = link_to 'On the Go'
+        = link_to 'On the Go', '/togo.html'
       %li
         .ui.dropdown
-          .text Special Events
+          %span Special Events
           .menu
             .item
               = link_to 'Private Dining', '/private-dining.html'
             .item
               = link_to 'Catering', '/catering.html'
       %li
-        = link_to 'Gift Cards'
+        = link_to 'Gift Cards', '/gift-cards.html'
       %li
-        = link_to 'Visit'
+        = link_to 'Visit', '#footer'
     .hours
       Today's Hours
       %span 11am-10pm
@@ -50,5 +50,8 @@
 :javascript
   // Dropdowns
   $('.ui.dropdown')
-    .dropdown()
+    .dropdown({
+      // you can use any ui transition
+      transition: 'drop'
+    })
   ;
