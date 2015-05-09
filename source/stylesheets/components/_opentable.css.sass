@@ -52,10 +52,12 @@ input[type='submit'].OT_TableButton
   display: table
   width: 100%
   article
-    display: table-cell
+    display: none
     vertical-align: middle
     height: 100%
     width: 100%
+    +media($medium)
+      display: table-cell
   p
     text-align: center
     position: relative
