@@ -1,17 +1,22 @@
 .hero
   background: url('/images/hero-1.jpg') no-repeat
   background-size: cover
-  min-height: 90vh
-  height: auto
+  min-height: rem(214)
+  height: rem(340)
   width: 100%
   display: table
+  +media($medium)
+    height: auto
+    min-height: 90vh
   article
     display: table-cell
-    vertical-align: middle
+    vertical-align: top
     height: 100%
     width: 100%
     text-align: center
     position: relative
+    +media($medium)
+      vertical-align: middle
     > img
       max-width: rem(516)
       width: 100%
@@ -60,7 +65,7 @@
 .togo
   background: url('/images/russell-bg.jpg')  no-repeat
   background-size: cover
-  height: rem(528)
+  height: rem(214)
   min-height: 100%
   width: 100%
   position: relative
@@ -72,13 +77,23 @@
   aside
     text-align: center
     padding: rem(30)
+    display: table
+    width: 100%
+    height: rem(214)
     +media($medium)
       text-align: left
       width: rem(430)
       height: auto
+      display: block
+      height: auto
     img
-      width: 100%
-      margin-top: rem(80)
+      margin: rem(40) auto
+      height: rem(77)
+      display: table-cell
+      vertical-align: middle
+      +media($medium)
+        height: rem(235)
+        margin: rem(30) 0 0 0
   article
     +media($medium)
       // padding-left: rem(250)
@@ -94,17 +109,39 @@
   background: url('/images/private-dining-bg.jpg')  no-repeat
   position: relative
   background-size: cover
+  height: rem(206)
+  +media($medium)
+    height: rem(768)
   h2
-    font-size: rem(120)
-    margin: 0
-    line-height: 118px
-    padding: rem(100) 0 0 0
-    float: right
+    font-size: rem(36)
+    margin: 0 auto
+    line-height: normal
+    padding: 0
+    float: none
+    vertical-align: middle
+    text-align: center
+    height: rem(207)
+    display: table-cell
+    +media($medium)
+      text-align: left
+      font-size: rem(120)
+      line-height: rem(118)
+      margin: 0
+      float: right
+      padding: rem(100) 0 0 0
+      height: auto
+      display: block
   aside
+    +clearfix
+    padding: 0
+    display: table
+    width: 100%
+    height: rem(207)
     +media($medium)
       width: 100%
       height: auto
-      +clearfix
+      padding: 0 rem(30)
+      display: block
   article
     +media($medium)
       padding-left: 0

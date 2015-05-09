@@ -2,13 +2,16 @@ footer#footer
   background: $black
   position: relative
   color: white
+  padding: rem(30)
   +media($medium)
-    padding: rem(100) 0
+    padding: rem(100) rem(30)
   section
     +outer-container
     font:
-      size: rem(28)
+      size: rem(20)
     line-height: rem(34)
+    +media($medium)
+      font-size: rem(28)
   article
     +media($medium)
       +span-columns(6)
