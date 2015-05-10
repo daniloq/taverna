@@ -5,6 +5,7 @@
   height: rem(340)
   width: 100%
   display: table
+  +transition(all 2s ease-in-out)
   +media($medium)
     height: auto
     min-height: 90vh
@@ -20,6 +21,8 @@
     > img
       max-width: rem(516)
       width: 100%
+      +media($medium)
+        margin-bottom: rem(180)
     .ticker
       position: absolute
       bottom: 0
