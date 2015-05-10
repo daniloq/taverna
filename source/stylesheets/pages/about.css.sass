@@ -6,11 +6,14 @@
   max-height: rem(612)
   width: 100%
   h2
-    font-size: rem(120)
+    font-size: rem(60)
     margin: 0
     line-height: rem(118)
-    padding: rem(100) 0 0 0
+    padding: rem(30) 0
     float: left
+    +media($medium)
+      font-size: rem(120)
+      padding: rem(100) 0 0 0
   aside
     +media($medium)
       width: 100%
@@ -30,7 +33,9 @@
 .main-content
   background: white
   position: relative
-  padding: rem(80) 0
+  padding: rem(30) 0
+  +media($medium)
+    padding: rem(80) 0
   article
     height: 100%
     +media($medium)
@@ -39,6 +44,12 @@
       box-sizing: border-box
     h1
       font-weight: 700
+      font-size: rem(32)
+      line-height: 1
+      +media($medium)
+        font-size: rem(64)
+        line-height: auto
+
     h5
       margin-bottom: rem(5)
     small
@@ -64,6 +75,9 @@
     border: rem(2) solid black
     padding: rem(30)
     box-sizing: border-box
+    margin: rem(30) 0 
+    +media($medium)
+      margin: 0
     p
       a
         color: $yellow

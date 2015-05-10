@@ -6,11 +6,14 @@
   max-height: rem(612)
   width: 100%
   h2
-    font-size: rem(120)
+    font-size: rem(60)
     margin: 0
     line-height: rem(118)
-    padding: rem(100) 0 0 0
+    padding: rem(30) 0
     float: left
+    +media($medium)
+      font-size: rem(120)
+      padding: rem(100) 0 0 0
   article
     position: relative
     +media($medium)
@@ -31,7 +34,7 @@
         height: rem(268)
         position: absolute
         bottom: 0
-        right: 0
+        right: rem(-100)
         top: 710px
         z-index: 0
   .menu
@@ -80,6 +83,10 @@
 
 .menu-nav
   padding: 0
+  margin-right: 0
+  +media($medium)
+    margin-right: rem(-30)
+    float: right
   ul
     margin: 0
     li
