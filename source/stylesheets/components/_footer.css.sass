@@ -15,6 +15,11 @@ footer#footer
   article
     +media($medium)
       +span-columns(6)
+    a
+      color: white
+      text-decoration: none
+      &.circle-btn
+        color: black
   h4
     color: $yellow
   dl
@@ -48,7 +53,7 @@ footer#footer
         min-width: rem(129)
       dd
         font:
-          family: 'Sentinel', sans-serif
+          family: 'Sentinel', serif
           size: rem(22)
           weight: 300
         text-align: right
