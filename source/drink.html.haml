@@ -1025,16 +1025,3 @@
 = partial 'refills/opentable'
 
 = partial 'refills/footer'
-
-:javascript
-  jQuery(function() {
-    jQuery('.next').click(function() {
-      jQuery('.menu-container').fadeOut(1000);
-      jQuery('#menu' + $(this).attr('target')).fadeIn(1000);
-      return false;
-    });
-  });
-  $('.next').click(function() {
-    $('a.active').not(this).removeClass('active');
-    $(this).toggleClass("active");
-  });

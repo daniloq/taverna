@@ -6,16 +6,3 @@
       Some events from our
       =link_to 'instagram', '#'
     #instafeed
-
-:javascript
-  if ($('#instafeed').length > 0) {
-    var feed = new Instafeed({
-      get: 'user',
-      userId: 181468269,
-      accessToken: '181468269.467ede5.834e93572e2149058be827140536bb2a',
-      limit: 8,
-      sortBy: 'random',
-      resolution: 'low_resolution'
-    });
-    feed.run();
-  }

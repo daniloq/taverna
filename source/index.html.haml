@@ -63,19 +63,3 @@
 = partial 'refills/opentable'
 
 = partial 'refills/footer'
-
-:javascript
-  var now = 0;
-  var int = self.setInterval('changeBG()', 4000);
-  var array = ['/images/hero-1.jpg', '/images/1.jpg', '/images/2.jpg', '/images/3.jpg', '/images/4.jpg' ];
-
-  function changeBG() {
-    //array of backgrounds
-    now = (now + 1) % array.length;
-    $('.hero').css({
-      'background': 'url("' + array[now] + '")',
-      'background-repeat': 'no-repeat',
-      'width' : '100%',
-      'background-size' : 'cover'
-    });
-  }
