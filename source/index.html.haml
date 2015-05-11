@@ -40,21 +40,11 @@
     %aside
       = image_tag 'images/togo-logo.png'
     %article
-      .cta
-        .content
-          %h3
-            Don't have enough
-            %br
-            time for the lunch?
-          %p
-            Our Taverna on the Go menu is fast and
-            %br
-            full of flavor. You can order at the
-            %br
-            counter or have lunch delivered.
-          = link_to '#' do
-            Learn More
-            .right-caret
+      .hide-small
+        = partial 'refills/togo-content'
+
+%section.hide-large
+  = partial 'refills/togo-content'
 
 %section.private-dining
   .wrapper
@@ -64,18 +54,11 @@
         %br
         Dining
     %article
-      .cta
-        .content
-          %h3 The table is set
-          %p
-            Let us be your home away from home;
-            %br
-            our Private Dining Room is perfect for
-            %br
-            any occasion.
-          = link_to '#' do
-            Learn More
-            .right-caret
+      .hide-small
+        = partial 'refills/pdr-content'
+
+%section.hide-large
+  = partial 'refills/pdr-content'
 
 = partial 'refills/opentable'
 

@@ -155,7 +155,7 @@
   width: rem(396)
   height: rem(396)
   text-align: center
-  display: none
+  display: block
   +media($medium)
     display: table
   .content
@@ -189,5 +189,19 @@
   background-size: contain
 
 .hide-large
+  .cta
+    width: 100%
+    text-align: center
+    border-radius: 0
+    height: auto
+    .content
+      margin: 0 auto
+      display: block
+      padding-bottom: rem(20)
   +media($medium)
     display: none
+
+.hide-small
+  display: none
+  +media($medium)
+    display: block
