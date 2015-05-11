@@ -46,7 +46,7 @@
       = link_to 'contact@tavernasanmarco.com', 'mailto:contact@tavernasanmarco.com'
     = link_to '#', class: 'collapse-menu' do
       %i.ion-navicon-round
-    .mobile-nav
+    .ui.basic.modal.mobile-nav
       = link_to 'Dinner', '/dinner.html'
       = link_to 'Lunch', '/lunch.html'
       = link_to 'Brunch', '/brunch.html'
@@ -66,6 +66,10 @@
       transition: 'drop'
     })
   ;
+  $('.ui.modal')
+    .modal('attach events', '.collapse-menu', 'show')
+  ;
+
   $(function() {
     $('a[href*=#]:not([href=#])').click(function() {
       if (location.pathname.replace(/^\//, '') == this.pathname.replace(
