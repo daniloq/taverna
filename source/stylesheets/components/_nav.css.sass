@@ -59,12 +59,14 @@ nav
     family: 'Gotham', sans-serif
     weight: 700
   span
-    display: block
+    display: none
     font:
       size: rem(13)
       family: 'Sentinel', serif
       weight: 300
     text-transform: none
+    &.show-time
+      display: block
   +media($medium)
     border: rem(2) solid black
 

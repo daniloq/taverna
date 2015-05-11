@@ -40,7 +40,13 @@
         = link_to 'Visit', '#footer'
     .hours
       Today's Hours
-      %span 11am-10pm
+      %span.day 11am-10pm
+      %span.day 11am-10pm
+      %span.day 11am-10pm
+      %span.day 11am-10pm
+      %span.day 11am-11pm
+      %span.day 11am-11pm
+      %span.day 11am-10pm
     .info
       904.398.3005
       = link_to 'contact@tavernasanmarco.com', 'mailto:contact@tavernasanmarco.com'
@@ -68,10 +74,11 @@
       transition: 'drop'
     })
   ;
+  // Mobile Nav
   $('.ui.modal')
     .modal('attach events', '.collapse-menu', 'show')
   ;
-
+  // Scroll to anchor
   $(function() {
     $('a[href*=#]:not([href=#])').click(function() {
       if (location.pathname.replace(/^\//, '') == this.pathname.replace(
@@ -87,4 +94,13 @@
         }
       }
     });
+  });
+  // Store Hours
+  $(document).ready(function() {
+
+    var date = new Date();
+
+    var currentDay = date.getDay();
+
+    $('.hours span:eq(' + currentDay +')').addClass('show-time');
   });
