@@ -38,11 +38,18 @@
           = image_tag 'images/map.png'
     %article
       %h4 Newsletter
-      %ul.inline
-        %li
-          %input{type: 'text', placeholder: 'Email'}
-        %li
-          %input{type: 'submit'}
+      / Begin MailChimp Signup Form
+      #mc_embed_signup
+        %form#mc-embedded-subscribe-form.validate{:action => "//tavernasanmarco.us8.list-manage.com/subscribe/post?u=4ad5653bae281118fa977cb92&amp;id=5ba8e7779b", :method => "post", :name => "mc-embedded-subscribe-form", :novalidate => "", :target => "_blank"}
+          #mc_embed_signup_scroll
+            %ul.inline
+              %li
+                %input#mce-EMAIL.email{:name => "EMAIL", :placeholder => "EMAIL", :required => "", :type => "email", :value => ""}
+                  / real people should not fill this in and expect good things - do not remove this or risk form bot signups
+                  %div{:style => "position: absolute; left: -5000px;"}
+                    %input{:name => "b_4ad5653bae281118fa977cb92_5ba8e7779b", :tabindex => "-1", :type => "text", :value => ""}/
+              %li
+                %input#mc-embedded-subscribe.button{:name => "subscribe", :type => "submit", :value => "Submit"}/
       %h4 Specials/Events/Photos
       = link_to '#', class: 'circle-btn' do
         %i.ion-social-facebook
