@@ -106,9 +106,9 @@
     .cta
       position: absolute
       bottom: rem(-60)
+      margin-left: rem(250)
 
 .private-dining
-  @extend .togo
   background: url('/images/private-dining-bg.jpg')  no-repeat
   position: relative
   background-size: cover
@@ -148,6 +148,9 @@
   article
     +media($medium)
       padding-left: 0
+    .cta
+      position: absolute
+      bottom: rem(-100)
 
 .cta
   background: white
@@ -156,6 +159,7 @@
   height: rem(396)
   text-align: center
   display: block
+  margin-left: none
   +media($medium)
     display: table
   .content
@@ -205,3 +209,6 @@
   display: none
   +media($medium)
     display: block
+
+.text-right
+  text-align: right

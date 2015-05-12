@@ -1,10 +1,13 @@
 .about
-  @extend .togo
   background: url('/images/about-bg.jpg')  no-repeat
   position: relative
   background-size: cover
   max-height: rem(612)
   width: 100%
+  .cta
+    display: none
+    +media($medium)
+      display: block
   h2
     font-size: rem(60)
     margin: 0
@@ -20,11 +23,14 @@
       height: auto
       +clearfix
   article
+    +clearfix
     +media($medium)
       padding-left: 0
       .cta
-        right: 0
         background: $nude
+        float: right
+        bottom: rem(-80)
+        position: relative
         .content
           padding: rem(60)
           box-sizing: border-box
@@ -75,7 +81,7 @@
     border: rem(2) solid black
     padding: rem(30)
     box-sizing: border-box
-    margin: rem(30) 0 
+    margin: rem(30) 0
     +media($medium)
       margin: 0
     p
