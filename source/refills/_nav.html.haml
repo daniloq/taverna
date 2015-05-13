@@ -2,16 +2,16 @@
   .wrapper
     .logo
       = link_to '/' do
-        = image_tag 'images/taverna.png'
+        = image_tag '../images/taverna.png'
     %ul
       %li
         .ui.dropdown
           %span Menus
           .menu
             .item
-              = link_to 'Dinner', '/dinner.html', class: 'active'
+              = link_to 'Dinner', 'dinner', class: 'active'
             .item
-              = link_to 'Lunch', '/lunch.html'
+              = link_to 'Lunch', 'lunch.html'
             .item
               = link_to 'Brunch', '/brunch.html'
             .item
