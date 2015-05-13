@@ -64,7 +64,7 @@ $('.next').click(function() {
 // Hero Background Image Changer
 var now = 0;
 var int = self.setInterval('changeBG()', 4000);
-var array = ['/images/hero-1.jpg', '/images/1.jpg', '/images/2.jpg', '/images/3.jpg', '/images/4.jpg' ];
+var array = ['images/hero-1.jpg', 'images/1.jpg', 'images/2.jpg', 'images/3.jpg', 'images/4.jpg' ];
 
 function changeBG() {
   //array of backgrounds

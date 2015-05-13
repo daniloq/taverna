@@ -1,6 +1,6 @@
 .dinner, .lunch, .brunch, .dessert, .happy-hour, .drink
   @extend .togo
-  background: url('/images/dinner-bg.jpg')  no-repeat
+  background: url(image-path('/images/dinner-bg.jpg'))  no-repeat
   position: relative
   background-size: cover
   max-height: rem(612)
@@ -28,6 +28,7 @@
           box-sizing: border-box
           vertical-align: top
       figure
+        margin: 0
         +span-columns(6)
         &:nth-of-type(2)
           padding-left: rem(10)
@@ -49,35 +50,35 @@
     padding: 0
 
 .lunch
-  background: url('/images/lunch-bg.jpg')  no-repeat
+  background: url(image-path('/images/lunch-bg.jpg'))  no-repeat
   position: relative
   background-size: cover
   max-height: rem(612)
   width: 100%
 
 .brunch
-  background: url('/images/brunch-bg.jpg')  no-repeat
+  background: url(image-path('/images/brunch-bg.jpg'))  no-repeat
   position: relative
   background-size: cover
   max-height: rem(612)
   width: 100%
 
 .dessert
-  background: url('/images/dessert-bg.jpg')  no-repeat
+  background: url(image-path('/images/dessert-bg.jpg'))  no-repeat
   position: relative
   background-size: cover
   max-height: rem(612)
   width: 100%
 
 .happy-hour
-  background: url('/images/happy-hour-bg.jpg')  no-repeat
+  background: url(image-path('/images/happy-hour-bg.jpg'))  no-repeat
   position: relative
   background-size: cover
   max-height: rem(612)
   width: 100%
 
 .drink
-  background: url('/images/drink-bg.jpg')  no-repeat
+  background: url(image-path('/images/drink-bg.jpg'))  no-repeat
   position: relative
   background-size: cover
   max-height: rem(612)
