@@ -28,6 +28,14 @@ $(document).ready(function() {
   var currentDay = date.getDay();
 
   $('.hours span:eq(' + currentDay +')').addClass('show-time');
+  // Ticker
+  $('#lightSlider').lightSlider({
+    item: 1,
+    autoWidth: false,
+    pager: true,
+    keyPress: true,
+    adaptiveHeight: true
+  });
 });
 
 // Scroll to anchor
