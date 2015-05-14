@@ -61,18 +61,19 @@ $('.next').click(function() {
   $(this).toggleClass("active");
 });
 
-// Hero Background Image Changer
-var now = 0;
-var int = self.setInterval('changeBG()', 4000);
-var array = ['images/hero-1.jpg', 'images/1.jpg', 'images/2.jpg', 'images/3.jpg', 'images/4.jpg' ];
-
-function changeBG() {
-  //array of backgrounds
-  now = (now + 1) % array.length;
-  $('.hero').css({
-    'background': 'url("' + array[now] + '")',
-    'background-repeat': 'no-repeat',
-    'width' : '100%',
-    'background-size' : 'cover'
-  });
-}
+// Background Image Cycle
+$(window).load(function() {
+  var i = 0;
+  var images = ['images/1.jpg','images/2.jpg','images/3.jpg','images/4.jpg' ];
+  var image = $('.hero');
+  //Initial Background image setup
+  image.css('background', 'url(images/hero-1.jpg)');
+  //Change image at regular intervals
+  setInterval(function() {
+    image.fadeOut(1000, function() {
+      image.css('background', 'url(' + images[i++] + ')');
+      image.fadeIn(1000);
+    });
+    if (i == images.length) i = 0;
+  }, 5000);
+});
