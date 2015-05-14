@@ -70,10 +70,10 @@ $(window).load(function() {
   image.css('background', 'url(images/hero-1.jpg)');
   //Change image at regular intervals
   setInterval(function() {
-    image.fadeOut(1000, function() {
+    image.fadeOut(3000, function() {
       image.css('background', 'url(' + images[i++] + ')');
-      image.fadeIn(1000);
+      image.fadeIn(3000);
     });
     if (i == images.length) i = 0;
-  }, 5000);
+  }, 4000);
 });
