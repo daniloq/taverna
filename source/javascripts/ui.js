@@ -6,6 +6,18 @@ $(document).ready(function() {
       transition: 'drop'
     })
   ;
+  // Preload Images
+  Image1= new Image(1440,924)
+  Image1.src = 'images/1.jpg'
+
+  Image2 = new Image(1440,924)
+  Image2.src = 'images/2.jpg'
+
+  Image3 = new Image(1440,924)
+  Image3.src = 'images/3.jpg'
+
+  Image4 = new Image(1440,924)
+  Image4.src = 'images/4.jpg'
   // Mobile Nav
   $('.ui.modal')
     .modal('attach events', '.collapse-menu', 'show')
