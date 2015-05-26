@@ -31,9 +31,9 @@ $(document).ready(function() {
       limit: 8,
       sortBy: 'random',
       resolution: 'low_resolution',
-      filter: function(image) {
-        return image.tags.indexOf('privatedining') >= 0;
-      }
+      // filter: function(image) {
+      //   return image.tags.indexOf('privatedining') >= 0;
+      // }
     });
     feed.run();
     }
