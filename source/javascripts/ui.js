@@ -30,7 +30,10 @@ $(document).ready(function() {
       accessToken: '181468269.467ede5.834e93572e2149058be827140536bb2a',
       limit: 8,
       sortBy: 'random',
-      resolution: 'low_resolution'
+      resolution: 'low_resolution',
+      filter: function(image) {
+        return image.tags.indexOf('privatedining') >= 0;
+      }
     });
     feed.run();
     }
