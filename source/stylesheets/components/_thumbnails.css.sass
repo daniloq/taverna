@@ -6,8 +6,11 @@
     width: rem(136)
     height: rem(136)
     +media($medium)
-      width: rem(290)
-      height: rem(290)
+      width: rem(260)
+      height: rem(260)
+    +media($large)
+      width: rem(280)
+      height: rem(280)
     &:hover img
       border-color: $yellow
     span
@@ -24,7 +27,9 @@
       +media($medium)
         font:
           size: rem(68)
-        line-height: rem(290)
+        line-height: 16.125rem
+      +media($medium)
+        line-height: 17.125rem
     img
       width: 100%
       height: auto

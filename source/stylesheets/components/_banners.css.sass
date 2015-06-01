@@ -1,35 +1,37 @@
 .hero
-  background: url(image-path('images/hero-1.jpg')) no-repeat
+  background: url(image-path('images/1.jpg')) no-repeat
   background-size: cover !important
-  min-height: rem(214) !important
-  height: rem(340) !important
+  min-height: rem(400) !important
+  height: rem(400) !important
   width: 100% !important
   display: table !important
   +transition(all 2s ease-in-out)
-  +media($medium)
+  +media($small-plus)
     height: auto !important
     min-height: 90vh !important
   article
     display: table-cell
-    vertical-align: top
     height: 100%
     width: 100%
     text-align: center
     position: relative
-    +media($medium)
+    +media($small-plus)
       vertical-align: middle
     > img
-      max-width: rem(516)
-      width: 100%
-      +media($medium)
+      margin-top: rem(40)
+      max-width: rem(400)
+      +media($small-plus)
+        max-width: rem(360)
         margin-bottom: rem(180)
+      +media($medium)
+        max-width: rem(540)
     .ticker
       position: absolute
       bottom: 0
 
 .arrow-container
   display: none
-  +media($medium)
+  +media($small-plus)
     display: block
     position: absolute
     height: auto
@@ -37,10 +39,13 @@
     left: -50%
     bottom: rem(160)
     img
-      width: rem(52)
-      height: rem(51)
+      width: rem(30)
+      height: rem(30)
       position: relative
       left: 50%
+      +media($medium)
+        width: rem(50)
+        height: rem(50)
 
 .ticker
   width: 100%

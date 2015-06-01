@@ -5,10 +5,9 @@ nav
   .wrapper
     display: table
     width: 100%
-    padding: 0
+    padding: 0 rem(30)
     +media($medium)
       display: block
-      padding: 0
   .logo, .hours
     display: table-cell
     vertical-align: middle
@@ -68,8 +67,10 @@ nav
     &.show-time
       display: block
   +media($medium)
+    display: none !important
+  +media($medium-plus)
+    display: inline-block !important
     border: rem(2) solid black
-
 .info
   font:
     size: rem(22)
@@ -85,7 +86,7 @@ nav
     display: block
     text-decoration: none
     color: black
-  +media($medium)
+  +media($large)
     display: inline-block
     vertical-align: middle
 
