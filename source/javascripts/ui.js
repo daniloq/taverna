@@ -87,10 +87,10 @@ $('.next').click(function() {
 // Background Image Cycle
 $(window).load(function() {
   var i = 0;
-  var images = ['images/1.jpg','images/2.jpg','images/3.jpg','images/4.jpg', 'images/hero-1.jpg' ];
+  var images = ['images/2.jpg','images/3.jpg','images/4.jpg','images/5.jpg', 'images/1.jpg' ];
   var image = $('.hero');
   //Initial Background image setup
-  image.css('background', 'url(images/hero-1.jpg)');
+  image.css('background', 'url(images/1.jpg)');
   //Change image at regular intervals
   setInterval(function() {
     image.fadeOut(3000, function() {
