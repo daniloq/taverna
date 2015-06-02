@@ -43,6 +43,7 @@ $(document).ready(function() {
   var currentDay = date.getDay();
 
   $('.hours span:eq(' + currentDay +')').addClass('show-time');
+
   // Ticker
   $('#lightSlider').lightSlider({
     item: 1,
@@ -50,6 +51,13 @@ $(document).ready(function() {
     pager: true,
     keyPress: true,
     adaptiveHeight: true
+  });
+
+  // New Background Image Slider
+  $('.hero').bkgSlide({
+      images: ['images/1.jpg','images/2.jpg','images/3.jpg','images/4.jpg','images/5.jpg'],
+      speed: 8000,
+      width: '100%'
   });
 });
 
