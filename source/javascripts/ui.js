@@ -7,17 +7,17 @@ $(document).ready(function() {
     })
   ;
   // Preload Images
-  Image1= new Image(1440,924)
-  Image1.src = 'images/1.jpg'
-
-  Image2 = new Image(1440,924)
-  Image2.src = 'images/2.jpg'
-
-  Image3 = new Image(1440,924)
-  Image3.src = 'images/3.jpg'
-
-  Image4 = new Image(1440,924)
-  Image4.src = 'images/4.jpg'
+  // Image1= new Image(1440,924)
+  // Image1.src = 'images/1.jpg'
+  //
+  // Image2 = new Image(1440,924)
+  // Image2.src = 'images/2.jpg'
+  //
+  // Image3 = new Image(1440,924)
+  // Image3.src = 'images/3.jpg'
+  //
+  // Image4 = new Image(1440,924)
+  // Image4.src = 'images/4.jpg'
   // Mobile Nav
   $('.ui.modal')
     .modal('attach events', '.collapse-menu', 'show')
@@ -43,6 +43,7 @@ $(document).ready(function() {
   var currentDay = date.getDay();
 
   $('.hours span:eq(' + currentDay +')').addClass('show-time');
+
   // Ticker
   $('#lightSlider').lightSlider({
     item: 1,
@@ -50,6 +51,13 @@ $(document).ready(function() {
     pager: true,
     keyPress: true,
     adaptiveHeight: true
+  });
+
+  // New Background Image Slider
+  $('.hero').bkgSlide({
+      images: ['images/1.jpg','images/2.jpg','images/3.jpg','images/4.jpg','images/5.jpg'],
+      speed: 8000,
+      width: '100%'
   });
 });
 
@@ -85,18 +93,18 @@ $('.next').click(function() {
 });
 
 // Background Image Cycle
-$(window).load(function() {
-  var i = 0;
-  var images = ['images/2.jpg','images/3.jpg','images/4.jpg','images/5.jpg', 'images/1.jpg' ];
-  var image = $('.hero');
-  //Initial Background image setup
-  image.css('background', 'url(images/1.jpg)');
-  //Change image at regular intervals
-  setInterval(function() {
-    image.fadeOut(3000, function() {
-      image.css('background', 'url(' + images[i++] + ')');
-      image.fadeIn(3000);
-    });
-    if (i == images.length) i = 0;
-  }, 4000);
-});
+// $(window).load(function() {
+//   var i = 0;
+//   var images = ['images/2.jpg','images/3.jpg','images/4.jpg','images/5.jpg', 'images/1.jpg' ];
+//   var image = $('.hero');
+//   //Initial Background image setup
+//   image.css('background', 'url(images/1.jpg)');
+//   //Change image at regular intervals
+//   setInterval(function() {
+//     image.fadeOut(3000, function() {
+//       image.css('background', 'url(' + images[i++] + ')');
+//       image.fadeIn(3000);
+//     });
+//     if (i == images.length) i = 0;
+//   }, 4000);
+// });
