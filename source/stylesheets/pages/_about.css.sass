@@ -78,12 +78,15 @@
           +span-columns(6)
           margin-right: 0
   aside
-    border: rem(2) solid black
-    padding: rem(30)
+    border: none
+    border-top: rem(2) solid black
+    padding: rem(30) 0
     box-sizing: border-box
-    margin: rem(30) 0
+    margin: rem(20) 0
     +media($medium)
       margin: 0
+      padding: rem(30)
+      border: rem(2) solid black
     p
       a
         color: $yellow
@@ -92,8 +95,10 @@
       margin: 0 0 rem(20) 0
       font:
         family: 'gbold', sans-serif
-        size: rem(36)
+        size: rem(22)
       line-height: rem(42)
+      +media($medium)
+        font-size: rem(36)
     dl
       margin-bottom: rem(30)
       dt

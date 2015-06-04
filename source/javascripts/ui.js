@@ -50,7 +50,11 @@ $(document).ready(function() {
     autoWidth: false,
     pager: true,
     keyPress: true,
-    adaptiveHeight: true
+    adaptiveHeight: true,
+    auto: true,
+    loop: true,
+    speed: 800,
+    pause: 4000
   });
 
   // New Background Image Slider

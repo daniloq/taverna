@@ -379,7 +379,7 @@
                         }
                     }
                     var $cSouter = $slide.parent();
-                    $cSouter.find('.lSPager').html(pagers); 
+                    $cSouter.find('.lSPager').html(pagers);
                     if (settings.gallery === true) {
                         if (settings.vertical === true) {
                             // set Gallery thumbnail width
@@ -448,7 +448,7 @@
                     });
                 };
                 setCss();
-                if (obj.has('img')) {
+                if (obj.find('img').length) {
                     obj.find('img').load(function () {
                         setTimeout(function () {
                             setCss();
