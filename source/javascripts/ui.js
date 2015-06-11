@@ -90,10 +90,10 @@ jQuery(function() {
     jQuery('#menu' + $(this).attr('target')).fadeIn(1000);
     return false;
   });
-});
-$('.next').click(function() {
-  $('a.active').not(this).removeClass('active');
-  $(this).toggleClass("active");
+  $('.next').click(function() {
+    $('a.active').not(this).removeClass('active');
+    $(this).toggleClass('active');
+  });
 });
 
 // Background Image Cycle
