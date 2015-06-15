@@ -54,7 +54,7 @@ $(document).ready(function() {
     auto: true,
     loop: true,
     speed: 800,
-    pause: 4000
+    pause: 6000
   });
 
   // New Background Image Slider
