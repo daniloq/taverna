@@ -10,10 +10,14 @@
 %section.main-content
   .wrapper
     %article
+      %p
+        %i
+          Menu items are subject to change based on seasonality and availability. Please call the restaurant for the most up-to-date menus and daily specials.
+      %br
       %figure
         %table.menu{cellspacing: '0', cellpadding: '0'}
           %thead
-            %th{colspan: '2'} Starters
+            %th{colspan: '2'} Starters &amp; Sides
           %tbody
             %tr
               %td
@@ -31,21 +35,36 @@
                     %span V
                   %p fig compote, grilled ciabatta bread
                 %td
-                  9
+                  10
               %tr
                 %td
                   %h5
-                    Caprese Burrata
+                    Caprese
                     %span GF
-                    %span V+
-                  %p baby heirloom tomatoes, basil,                                                           balsamic reduction, proscuitto
+                    %span V
+                  %p
+                    baby heirloom tomatoes, basil, balsamic reduction, house infused olive oil
+                    %br
+                    %i
+                      %strong add
+                      proscuitto 5  / shrimp 7 / chicken 6
                 %td
-                  18
+                  10
+              %tr
+                %td
+                  %h5
+                    BURRATA
+                    %span GF*
+                    %span V*
+                  %p
+                    baby heirloom tomatoes, basil, balsamic reduction, house infused olive oil
+                %td
+                  16
               %tr
                 %td
                   %h5
                     Meatballs
-                  %p tomato-basil sauce, parmigiano-reggiano, grilled ciabatta bread
+                  %p tomato-basil sauce, parmesan, grilled ciabatta bread
                 %td
                   10
               %tr
@@ -61,18 +80,44 @@
                   %h5
                     Sautéed Calamari
                     %span GF*
-                  %p israeli cous cous, tomato, capers, niçoise olive, lemon zest
+                  %p Israeli cous cous, tomato, capers, kalamata olive, lemon zest
                 %td
-                  12
+                  14
               %tr
                 %td
                   %h5
-                    Asparagus &amp; Poached Egg
-                    %span GF*
-                    %span V*
-                  %p mushrooms, bacon, truffle
+                    Patatas Bravas
+                    %span GF
+                    %span V+*
+                  %p fried fingerling potatoes, spicy paprika, aioli
                 %td
-                  16
+                  6
+              %tr
+                %td
+                  %h5
+                    Risotto
+                    %span GF
+                    %span V
+                  %p green pea risotto, parmesan
+                %td
+                  9
+              %tr
+                %td
+                  %h5
+                    Parmesan Truffle Fries
+                    %span V+*
+                  %p truffle, parmesan, aioli
+                %td
+                  9
+              %tr
+                %td
+                  %h5
+                    Broccolini
+                    %span GF
+                    %span V+*
+                  %p garlic, shallots, lemon
+                %td
+                  8
         %table.menu{cellspacing: '0', cellpadding: '0'}
           %thead
             %th{colspan: '2'}
@@ -85,27 +130,31 @@
             %tr
               %td
                 %h5
-                  Tomato Bisque
+                  GAZPACHO
                   %span GF
-                  %span V
+                  %span V+*
                 %p
-                  creme fraiche, basil oil, chili oil
+                  chilled tomato soup, shrimp escabeche, cilantro
               %td
                 6
+                %br
+                12
               %tr
                 %td
                   %h5
-                    Summer Vegetable Soup
+                    CORN &amp; CRAB CHOWDER
                     %span GF
-                    %span V+
-                  %p corn, tomatoes, green beans, leeks, kale, potatoes, garbanzo beans, carrots, celery, onion, fresh herbs
+                    %span V*
+                  %p bacon, potatoes, cream, crab
                 %td
                   6
+                  %br
+                  12
               %tr
                 %td
                   %h5
                     Taverna Kale Salad
-                    %span GF
+                    %span GF*
                   %p kale, heirloom tomatoes, hard boiled egg, bacon, red onion, boquerones, parmesan crouton, caesar dressing
                 %td
                   8
@@ -127,13 +176,14 @@
                   %h5
                     Citrus Marinated Beet Salad
                     %span GF
-                    %span V*
+                    %span V+*
                   %p arugula, endive, goat cheese, orange segments, marcona almond
                 %td
                   8
                   %br
                   12
 
+      %figure
         %table.menu{cellspacing: '0', cellpadding: '0'}
           %thead
             %th{colspan: '2'}
@@ -170,9 +220,6 @@
                   %p house-made lamb and fennel sausage, goat cheese, pine nuts, piquillo peppers, carmelized onions, mint
                 %td
                   17
-
-
-      %figure
         %table.menu{cellspacing: '0', cellpadding: '0'}
           %thead
             %th{colspan: '2'}
@@ -190,13 +237,13 @@
                 %p
                   tomato cream sauce, fresh basil
               %td
-                20
+                21
               %tr
                 %td
                   %h5
                     House-Made Ravioli
                     %span V
-                  %p herbed ricotta ravioli, mushrooms, kale, leeks, peas, asparagus, broccolini, truffle cream sauce
+                  %p herbed ricotta ravioli, eggplant caponata, smoked eggplant puree, ricotta salata, pine nuts
                 %td
                   16
                   %br
@@ -204,10 +251,12 @@
               %tr
                 %td
                   %h5
-                    Seafood Linguini
-                  %p shrimp, mussels, clams, white wine butter sauce, oven-roasted tomatoes
+                    ORECCHIETTE
+                  %p pork ragu, broccolini, pine nuts
                 %td
-                  28
+                  18
+                  %br
+                  25
         %table.menu{cellspacing: '0', cellpadding: '0'}
           %thead
             %th{colspan: '2'} Entrées
@@ -217,9 +266,9 @@
                 %h5
                   Scallops
                   %span GF
-                %p corn risotto, truffle, parmesan
+                %p green pea risotto, parmesan
               %td
-                19
+                20
                 %br
                 30
             %tr
@@ -227,41 +276,38 @@
                 %h5
                   Salmon
                   %span GF
-                %p garbanzo beans, kale, tomatoes vinaigrette
+                %p corn succotash, bacon, white acre peas
               %td
                 25
             %tr
               %td
                 %h5
-                  Chorizo, Mussels, &amp; Clams
-                  %span GF
-                %p sauteed mussels & clams, house-made chorizo broth, corn, tomatoes, fried fingerling potatoes
+                  SICILIAN SEAFOOD STEW
+                %p shrimp, mussels, clams, calamari, crab, tomato fennel-broth, grilled bread
               %td
-                16
-                %br
-                24
+                30
             %tr
               %td
                 %h5
                   House-Smoked Chicken
-                  %span GF
-                %p green beans, marcona almonds, fingerling potatoes, lemon herb butter
+                  %span GF*
+                %p half chicken, panzanella salad, goat cheese, arugula
               %td
                 24
             %tr
               %td
                 %h5
-                  Lamb Meatballs
+                  TUSCAN BRAISED LAMB SHANK
+                  %span GF
                 %p
-                  ratatouille, kale, herbed ricotta ravioli
+                  white beans, kale, tomatoes
               %td
                 26
             %tr
               %td
                 %h5
                   Short Rib
-                  %span GF
-                %p english peas, israeli cous cous, mushrooms, oven roasted tomatoes, pearl onions
+                %p mushroom farro, broccolini
               %td
                 26
             %tr
@@ -269,50 +315,12 @@
                 %h5
                   Grilled Hanger Streak
                   %span GF
-                %p grilled asparagus,  fried fingerling potatoes, romesco sauce, ricotta salata, balsamic
+                %p asparagus, fingerling potatoes, bacon, mushrooms, truffle
               %td
                 27
 
-        %table.menu{cellspacing: '0', cellpadding: '0'}
-          %thead
-            %th{colspan: '2'}
-              Sides
-          %tbody
-            %tr
-              %td
-                %h5
-                  Patatas Bravas
-                  %span GF
-                  %span V+*
-                %p fried fingerling potatoes, spicy paprika, aioli
-              %td
-                6
-            %tr
-              %td
-                %h5
-                  Risotto
-                  %span GF
-                %p corn, sage
-              %td
-                9
-            %tr
-              %td
-                %h5
-                  Parmesan Truffle Fries
-                  %span V+*
-                %p truffle, parmigiano-reggiano, aioli
-              %td
-                9
-            %tr
-              %td
-                %h5
-                  Broccolini
-                  %span GF
-                  %span V+*
-                %p garlic, shallots, lemon
-              %td
-                8
         = image_tag 'images/stamp.png', class: 'stamp'
+
     %aside
       %nav.menu-nav
         %ul
