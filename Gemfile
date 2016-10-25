@@ -1,10 +1,12 @@
 # If you do not have OpenSSL installed, update
 # the following line to use 'http://' instead
 source 'https://rubygems.org'
+ruby '2.3.1'
 
 gem 'middleman', '~>3.3.7'
 gem 'bourbon'
 gem 'neat'
+gem 'eventmachine', '~>1.0.9'
 
 # Deploy github pages
 gem 'middleman-deploy', '~> 1.0'
