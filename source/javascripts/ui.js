@@ -59,7 +59,7 @@ $(document).ready(function() {
 
   // New Background Image Slider
   $('.hero').bkgSlide({
-      images: ['images/11.jpg','images/12.jpg','images/13.jpg','images/14.jpg','images/15.jpg'],
+      images: ['images/1.jpg','images/2.jpg','images/3.jpg','images/4.jpg','images/5.jpg'],
       speed: 8000,
       width: '100%',
       height: 'auto'
