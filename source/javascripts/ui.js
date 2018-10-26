@@ -64,6 +64,7 @@ $(document).ready(function() {
       width: '100%',
       height: 'auto'
   });
+
 });
 
 // Scroll to anchor
