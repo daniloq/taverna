@@ -1,4 +1,11 @@
 %nav
+  .pre-nav
+    .wrapper
+      %ul
+        %li
+          = link_to 'About', '/about.html'
+        %li
+          = link_to 'Gift Cards', '/gift-cards.html'
   .wrapper
     .logo
       = link_to '/' do
@@ -23,38 +30,21 @@
             .item
               = link_to 'On the Go', '/togo.html'
       %li
-        = link_to 'About', '/about.html'
-      %li
-        = link_to 'Delivery', '/togo.html'
-      %li
-        .ui.dropdown
-          %span Catering
-          .menu
-            .item
-              = link_to 'Private Dining', '/private-dining.html'
-            .item
-              = link_to 'Off-site', '/catering.html'
-      %li
-        = link_to 'Gift Cards', '/gift-cards.html'
-      %li
         = link_to 'Reservations', '#opentable'
-    .hours
-      Today's Hours
-      %span.day 10am-10pm
-      %span.day 11am-10pm
-      %span.day 11am-10pm
-      %span.day 11am-10pm
-      %span.day 11am-10pm
-      %span.day 11am-11pm
-      %span.day 10am-11pm
-    .info
-      904.398.3005
-      = link_to 'contact@tavernasanmarco.com', 'mailto:contact@tavernasanmarco.com'
+      %li
+        = link_to 'Private Dining', '/private-dining.html'
+      %li
+        = link_to 'Catering', '/catering.html'
+      %li
+        = link_to 'Contact', '#'
+      %li.order-now
+        = link_to 'Order Now', '/order-online/', {class: "button"}
     = link_to '#', class: 'collapse-menu' do
       %i.ion-navicon-round
     .ui.basic.modal.mobile-nav
       .close
         %i.ion-close-round
+      = link_to 'Order Now', '/order-online/', {class: "button"}
       = link_to 'About', '/about.html'
       = link_to 'Dinner', '/dinner.html'
       = link_to 'Lunch', '/lunch.html'

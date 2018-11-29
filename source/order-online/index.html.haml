@@ -1,0 +1,24 @@
+= partial 'refills/nav'
+
+%section.main-content#order-online
+  .wrapper
+    %article
+      %h1 Order Online
+      -# %p Copy needed here: Maybe something here explaining the 2 options maybe? Or talking about pick up and delivery. Or some sort of stipulations or guidance.
+      %p Choose your order type:
+      .order-methods
+        %ul
+          %li.order-individual<>
+            = link_to 'Individual', '/order-online/individual.html', {class: "full-width button-white"}
+            %p Order from the full Taverna menu.
+          %li.order-catering<>
+            = link_to 'Catering', 'https://ordering.chownow.com/order/13240/locations/18919?add_cn_ordering_class=true', {class: "full-width button-white chownow-order-online"}
+            %p Choose from our crowd-pleasing platters or individual boxed lunches.
+            %p
+              For full-service catering options, visit our
+              = link_to 'catering page', '/catering.html'
+
+
+= partial 'refills/opentable'
+
+= partial 'refills/footer'
