@@ -1,0 +1,37 @@
+= partial 'refills/nav'
+
+.prepared
+  %section.header
+    .wrapper
+      %aside
+        %h2.heading
+          Menus
+      %article
+
+  %section.main-content
+    .wrapper
+      %article
+        %h1.f2.display Curbside Pickup
+        %p
+          Your health and safety is of utmost importance to us. That is why we’ve decided to offer the comfort of Taverna cuisine now available with expanded curbside pickup options. Meet us on the patio or call us when you’re here and we’ll gladly walk it out to your car.
+        %p.f4
+          Open daily from 11 am – 8 pm.
+          %br
+          Call
+          %span.highlight.inverse= link_to '904.398.3005', 'tel:904-398-3005'
+          to order.
+        %h2.f2.bold Prepared Food Menu
+        = image_tag 'images/stamp.png', class: 'stamp'
+        %script(data-menu_desc_background_color="#ffffff" data-primary_background_color="#ffffff" data-display_menu="3835614" data-hide_cover_photo="true" data-hide_disclaimer="true" data-location="taverna-35" data-api_key="ke09z8icq4xu8uiiccighy1bw" id="singleplatform-menu" src="https://menus.singleplatform.com/widget")
+
+      %aside
+        %nav.menu-nav
+          %ul
+            %li
+              = link_to 'Prepared Food', '/prepared-food.html', class: 'active'
+            %li
+              = link_to 'Wine & Liquor', '/wine-liquor.html'
+            %li
+              = link_to 'Groceries & Supplies', '/groceries.html'
+
+  = partial 'refills/footer'

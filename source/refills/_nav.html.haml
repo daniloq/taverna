@@ -13,28 +13,28 @@
     %ul
       %li
         .ui.dropdown
-          %span Menus
+          %span Curbside Pickup Menus
           .menu
+            -# .item
+            -#   = link_to 'Dinner', '/dinner.html', class: 'active'
+            -# .item
+            -#   = link_to 'Lunch', '/lunch.html'
+            -# .item
+            -#   = link_to 'Brunch', '/brunch.html'
+            -# .item
+            -#   = link_to 'Dessert', '/dessert.html'
             .item
-              = link_to 'Dinner', '/dinner.html', class: 'active'
+              = link_to 'Prepared Food', '/prepared-food.html'
             .item
-              = link_to 'Lunch', '/lunch.html'
+              = link_to 'Wine & Liquor', '/wine-liquor.html'
             .item
-              = link_to 'Brunch', '/brunch.html'
-            .item
-              = link_to 'Dessert', '/dessert.html'
-            .item
-              = link_to 'Drink', '/drink.html'
-            .item
-              = link_to 'Happy Hour', '/happy-hour.html'
-            .item
-              = link_to 'On the Go', '/togo.html'
-      %li
-        = link_to 'Reservations', '#opentable'
-      %li
-        = link_to 'Private Dining', '/private-dining.html'
-      %li
-        = link_to 'Catering', '/catering.html'
+              = link_to 'Groceries & Supplies', '/groceries.html'
+      -# %li
+      -#   = link_to 'Reservations', '#opentable'
+      -# %li
+      -#   = link_to 'Private Dining', '/private-dining.html'
+      -# %li
+      -#   = link_to 'Catering', '/catering.html'
       %li
         = link_to 'Contact', '#contact'
       %li.order-now

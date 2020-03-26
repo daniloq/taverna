@@ -1,41 +1,45 @@
+.hero-covid
+  background-color: #000
+
+  .ticker
+    text-align: center
+
+  .wrapper
+    padding-top: rem(72)
+    padding-bottom: rem(48)
+    h1
+      margin: 0
+      line-height: 1
+      span
+        display: block
+        max-width: 500px
+    h2
+      max-width: rem(650)
+      line-height: 1.25
+    h3
+      padding-top: rem(18)
+      margin-bottom: 0
+      max-width: 750px
+    .button
+      color: #000
+      margin-top: rem(8)
+
 .menus
   background: $nude
   padding: rem(30) 0
   box-sizing: border-box
-  +clearfix
-  +media($medium)
-    padding: rem(120) 0
   .wrapper
     padding: 0
+    header
+      max-width: rem(650)
+      margin: 0 auto
+      padding: 0 rem(16) rem(42)
+      h2
+        font-size: rem(18)
+        +media($medium)
+          font-size: rem(36)
+      p
+        font-size: rem(16)
+        line-height: 1.5
     +media($medium)
       padding: rem(30)
-  h2
-    margin: 0
-    padding: 0
-    box-sizing: border-box
-    font-size: 45px
-    text-align: center
-    +media($medium)
-      margin: 0
-      padding: 0px 0 30px 108px
-      box-sizing: border-box
-      font-size: 144px
-      text-align: left
-  aside
-    display: none
-    +media($medium)
-      display: block
-      +span-columns(3)
-  article
-    +media($medium)
-      +span-columns(9)
-    .thumbs
-      margin-top: 0px
-      min-width: 100%
-      text-align: center
-      +media($medium)
-        margin-top: -100px
-      .thumb
-        margin: 10px
-        +media($medium)
-          margin: 10px 20px 20px 0
