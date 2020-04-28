@@ -1,12 +1,40 @@
 %section.hero-covid
-  %article.wrapper
-    %h1.f1
-      %span.small.white We're back with
-      %span.display.highlight Curbside Pickup
-    %h2.f2.white Now offering a special all-day menu with the convenience & safety of curbside pickup.
+  %article
+    #heroSlider
+      .slide#slide_1
+        .wrapper
+          %h1.f1
+            %span.small.white We're back with
+            %span.display.highlight Curbside Pickup & Delivery
+          %h2.f2.white
+            Now offering a special all-day menu complete with quart-sized to-go cocktails.
+            %sup *
 
-    = link_to 'Learn More', '/prepared-food.html', class: 'button'
-    %h3.f3
-      %span.highlight Coming soon: Taverna Neighborhood Market.
-      %span.white Discounted wine and liquor bottles, raw proteins, fresh product, specialty foods, and household staples like toilet paper and paper towels
+          = link_to 'View The Menu', '/prepared-food.html', class: 'button alt'
+          %h3.f3.white
+            %sup *
+            Cocktails are available for pickup only. Sealed wine and liquor bottles are available for delivery.
+
+      .slide#slide_2
+        .wrapper
+          %h1.f1
+            %span.small Now Offering
+            %span.display Discounted Wine & Liquor
+          %h2.f2 Enjoy discounted bottles of your favorite Taverna wines and liquors.
+
+          = link_to 'View The Menu', '/wine-liquor.html', class: 'button black'
+
+      .slide#slide_3
+        .wrapper
+          %h1.f1
+            %span.small Introducing
+            %span.display Taverna Neighborhood Market
+          %h2.f2
+            High quality raw proteins, fresh produce, specialty foods, and household staples like toilet paper and paper towels.
+            %sup *
+
+          = link_to 'View The Menu', '/groceries.html', class: 'button alt'
+          %h3.f3
+            %sup *
+            Subject to Availability
   = partial 'refills/ticker'

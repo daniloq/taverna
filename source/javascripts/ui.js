@@ -44,11 +44,24 @@ $(document).ready(function() {
 
   $('.hours span:eq(' + currentDay +')').addClass('show-time');
 
-  // Ticker
-  $('#lightSlider').lightSlider({
+  // // Ticker
+  // $('#lightSlider').lightSlider({
+  //   item: 1,
+  //   autoWidth: false,
+  //   pager: true,
+  //   keyPress: true,
+  //   adaptiveHeight: true,
+  //   auto: true,
+  //   loop: true,
+  //   speed: 800,
+  //   pause: 6000
+  // });
+
+  // Covid Hero Slider
+  $('#heroSlider').lightSlider({
     item: 1,
     autoWidth: false,
-    pager: true,
+    pager: false,
     keyPress: true,
     adaptiveHeight: true,
     auto: true,

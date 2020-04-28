@@ -1,5 +1,18 @@
 .hero-covid
-  background-color: #000
+  .slide
+    min-height: 525px
+    +media($smedium)
+      min-height: Initial
+    +media($medium)
+      min-height: 750px
+  #slide_1
+    background-color: #000
+
+  #slide_2
+    background-color: $yellow
+
+  #slide_3
+    background-color: $nude
 
   .ticker
     text-align: center
@@ -21,7 +34,6 @@
       margin-bottom: 0
       max-width: 750px
     .button
-      color: #000
       margin-top: rem(8)
 
 .menus
