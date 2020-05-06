@@ -9,11 +9,11 @@
         = link_to 'Back', '/order-online/', {class: "button-back"}
       %p How will you receive your order?
       .order-methods
-        %ul
-          %li.order-individual<>
-            = link_to 'Pick Up', 'https://ordering.chownow.com/order/13240/locations/18553?add_cn_ordering_class=true', {class: "full-width button-white chownow-order-online"}
-          %li.order-catering<>
-            = link_to 'Delivery', 'https://www.bitesquad.com/food/taverna/16504', {target: "_blank", class: "full-width button-white"}
+        .row
+          = link_to 'Pick Up', 'https://ordering.chownow.com/order/13240/locations/18553?add_cn_ordering_class=true', {class: "button-white"}
+        .row
+          = link_to 'Delivery with BiteSquad', 'https://www.bitesquad.com/food/taverna/16504', {target: "_blank", class: "button-white"}
+          = link_to 'Delivery with DoorDash', 'https://www.doordash.com/store/taverna-jacksonville-440161/en-US', {target: "_blank", class: "button-white"}
 
 
 
