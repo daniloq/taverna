@@ -13,7 +13,7 @@
     %ul
       %li
         .ui.dropdown
-          %span Curbside Pickup & Delivery
+          %span Menus
           .menu
             -# .item
             -#   = link_to 'Dinner', '/dinner.html', class: 'active'
@@ -26,11 +26,11 @@
             .item
               = link_to 'Prepared Food & Drink Menu', '/prepared-food.html'
             .item
-              = link_to 'Wine & Liquor', '/wine-liquor.html'
+              = link_to 'Bottled Wine', '/wine-liquor.html'
             .item
               = link_to 'Groceries & Supplies', '/groceries.html'
-      -# %li
-      -#   = link_to 'Reservations', '#opentable'
+      %li
+        = link_to 'Reservations', '#opentable'
       -# %li
       -#   = link_to 'Private Dining', '/private-dining.html'
       -# %li
@@ -38,7 +38,7 @@
       %li
         = link_to 'Contact', '#contact'
       %li.order-now
-        = link_to 'Order Now', '/order-online/', {class: "button"}
+        = link_to 'Order Here', '/order-online/', {class: "button"}
     = link_to '#', class: 'collapse-menu' do
       %i.ion-navicon-round
     .ui.basic.modal.mobile-nav
@@ -46,7 +46,8 @@
         %i.ion-close-round
       = link_to 'Order Now', '/order-online/', {class: "button"}
       = link_to 'Prepared Food & Drink Menu', '/prepared-food.html'
-      = link_to 'Wine & Liquor', '/wine-liquor.html'
+      = link_to 'Bottled Wine', '/wine-liquor.html'
       = link_to 'Groceries & Supplies', '/groceries.html'
       = link_to 'About', '/about.html'
       = link_to 'Gift Cards', '/gift-cards.html'
+      = link_to 'Reservations', '#opentable'
