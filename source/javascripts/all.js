@@ -6,4 +6,5 @@
 //= require 'lightslider'
 //= require 'jquery.bkgslide-1.0.4'
 //= require 'ui'
+//= require 'resy'
 //= require_self
