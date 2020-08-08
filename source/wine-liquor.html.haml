@@ -1,0 +1,27 @@
+= partial 'refills/nav'
+
+.prepared
+  %section.main-content
+    .wrapper
+      %article
+        %h1.f2.display Curbside Pickup & Delivery
+        %p Your health and safety is of utmost importance to us. That is why we’ve decided to offer the comfort of Taverna cuisine now available with expanded curbside pickup and delivery options. Enjoy the convenience of delivery through either Doordash or BiteSquad. If you’d like to pick up your order, you can meet us on the patio or call us when you’re here and we’ll gladly walk it out to your car.
+        = link_to 'Order Here', '/order-online/', {class: "button alt"}
+        %p You can also call 904.398.3005 to place your order.
+        %h2.f2.bold Bottled Wine Menu
+        = image_tag 'images/stamp.png', class: 'stamp'
+        %script(data-menu_desc_background_color="#ffffff" data-primary_background_color="#ffffff" data-display_menu="3835612" data-hide_cover_photo="true" data-hide_disclaimer="true" data-location="taverna-35" data-api_key="ke09z8icq4xu8uiiccighy1bw" id="singleplatform-menu" src="https://menus.singleplatform.com/widget")
+
+      %aside
+        %nav.menu-nav
+          %ul
+            %li
+              = link_to 'Food & Drink', '/prepared-food.html'
+            %li
+              = link_to 'Bottled Wine', '/wine-liquor.html', class: 'active'
+            %li
+              = link_to 'Happy Hour', '/groceries.html'
+
+  = partial 'refills/resy'
+
+  = partial 'refills/footer'

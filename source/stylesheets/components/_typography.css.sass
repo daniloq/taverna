@@ -54,3 +54,67 @@ h5
     size: rem(24)
     family: 'Gotham A', 'Gotham B', sans-serif
     weight: 700
+
+.f1
+  font-family: 'Gotham A', 'Gotham B'
+  font-weight: 800
+  text-transform: uppercase
+  line-height: normal
+  color: #000
+  .display
+    font-size: rem(44)
+    +media($small-plus)
+      font-size: rem(50)
+    +media($medium)
+      font-size: rem(100)
+  .small
+    font-size: rem(16)
+    +media($small-plus)
+      font-size: rem(24)
+
+.f2
+  font-family: 'Sentinel A', 'Sentinel B', serif
+  font-weight: 400
+  text-transform: none
+  line-height: 1.5
+  font-size: rem(18)
+  color: #000
+  +media($medium)
+    font-size: rem(32)
+  .display
+    font-size: rem(32)
+    +media($small-plus)
+      font-size: rem(64)
+
+.f3
+  font-family: 'Sentinel A', 'Sentinel B', serif
+  font-weight: 400
+  text-transform: none
+  line-height: 1.5
+  font-size: rem(18)
+  color: #000
+
+.f4
+  font-family: 'Sentinel A', 'Sentinel B', serif
+  font-weight: 400
+  line-height: 1.5
+  font-size: rem(22)
+  color: #000
+
+.white
+  color: #fff
+
+.highlight
+  color: $yellow
+  &.inverse
+    a
+      color: #000
+    color: #000
+    background-color: $yellow
+    &::before,
+    &::after
+      content: ""
+      margin: 5px
+
+.bold
+  font-weight: 700
