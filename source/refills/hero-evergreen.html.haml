@@ -1,0 +1,44 @@
+%section.hero-evergreen
+  %article
+    #heroSlider
+      .slide#slide_1
+        %picture
+          %source(srcset="/images/hero-dining-desktop.jpg, /images/hero-dining-desktop@2x.jpg 2x" media="(min-width: 768px)")
+          %source(srcset="/images/hero-dining-mobile.jpg, /images/hero-dining-mobile@2x.jpg 2x" media="(max-width: 767px)")
+          %img(src="/images/hero-dining-desktop.jpg" alt="A dining room high top table at Taverna San Marco." )
+        .wrapper
+          %h1.f1
+            %span.small.white Join Us For
+            %span.display.white In-House & Patio Dining
+
+          = link_to 'Make A Reservation', '#resy', class: 'button alt'
+
+      .slide#slide_2
+        %picture
+          %source(srcset="/images/hero-cheese-desktop.jpg, /images/hero-cheese-desktop@2x.jpg 2x" media="(min-width: 768px)")
+          %source(srcset="/images/hero-cheese-mobile.jpg, /images/hero-cheese-mobile@2x.jpg 2x" media="(max-width: 767px)")
+          %img(src="/images/hero-cheese-desktop.jpg" alt="A selection of wine, cheeses and pizza from Taverna San Marco." )
+        .wrapper
+          %h2.f1
+            %span.small.white Introducing
+            %span.display.white
+              Taverna Wine &
+              %br
+              Cheese Club
+
+          = link_to 'Join The Club', 'https://direct.chownow.com/order/13240/locations/18919', class: 'button alt', target: 'blank'
+
+
+      .slide#slide_3
+        %picture
+          %source(srcset="/images/hero-drinks-desktop.jpg, /images/hero-drinks-desktop@2x.jpg 2x" media="(min-width: 768px)")
+          %source(srcset="/images/hero-drinks-mobile.jpg, /images/hero-drinks-mobile@2x.jpg 2x" media="(max-width: 767px)")
+          %img(src="/images/hero-drinks-desktop.jpg" alt="Enjoy your happy hour to go at Taverna." )
+        .wrapper
+          %h2.f1
+            %span.small.white You'll Love
+            %span.display.white Happy Hour, Now To-Go.
+
+          = link_to 'Order Now', '/order-online/', class: 'button alt'
+
+  = partial 'refills/ticker'

@@ -8,11 +8,16 @@
     text-align: center
     position: relative
     z-index: 1
+    padding: 0 2rem
   h2
     position: absolute
     top: 30px
-    left: 290px
+    left: 50%
+    transform: translateX(-50%)
     z-index: 0
+    +media($smedium)
+      left: 290px
+      transform: none
   &-wrapper
     text-align: center
     .resy-button

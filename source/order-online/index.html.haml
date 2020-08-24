@@ -3,20 +3,25 @@
 %section.main-content#order-online
   .wrapper
     %article
-      %h1 Order Online
+      %h1.f2.display Order Online
       -# %p Copy needed here: Maybe something here explaining the 2 options maybe? Or talking about pick up and delivery. Or some sort of stipulations or guidance.
       %p Choose your order type:
       .order-methods
         %ul
           %li.order-individual<>
-            = link_to 'Carryout & Takeaway', 'https://ordering.chownow.com/order/13240/locations/18553?add_cn_ordering_class=true', {class: "full-width button-white", target: "_blank"}
-            %p Order from our food & beverage menu or our bottled wine menu here.
+            = link_to 'Carryout & Delivery', 'https://ordering.chownow.com/order/13240/locations/18553?add_cn_ordering_class=true', {class: "full-width button-white", target: "_blank"}
+            %p Order from our menus for carryout or delivery.
           %li.order-catering<>
             = link_to "Taverna Wine & Cheese Club", 'https://ordering.chownow.com/order/13240/locations/18919?add_cn_ordering_class=true', {class: "full-width button-white chownow-order-online", target: "_blank"}
-            -# %p Feeding a large group? Choose from our crowd-pleasing platters or individual boxed lunches.
-            -# %p Looking for specialty grocery items and supplies? Use this link to order from the Taverna Neighborhood Market.
+            %p Join the Taverna wine & cheese club, a monthly subscription curated by our talented team.
+            %p All orders will be delivered on the 1st of the month. Please note: Our system will force you to select a delivery date. This selection is required but will not impact the actual delivery date.
+
+    %aside.alt
+      %h3 Free Delivery
+      %p We’re now offering complimentary delivery within most Jacksonville neighborhoods.
+      %p Outside of our delivery range? Call the restaurant to make arrangements.
+      %p Available zipcodes: 32204, 32205, 32206, 32207, 32210, 32217, 32257, 32223
 
 
-
-
+= partial 'refills/resy'
 = partial 'refills/footer'
