@@ -41,11 +41,25 @@ document.addEventListener("DOMContentLoaded", function() {
     container: '#heroSlider',
     autoplay: true,
     speed: 800,
+    autoplayTimeout: 8000,
+    nav: false,
+    slideBy: "page",
+    arrowKeys: true,
+    swipeAngle: false,
+    mouseDrag: true,
+  });
+
+  // Homepage ticker Slider
+  var tickerSlider = tns({
+    container: '#tickerSlider',
+    autoplay: true,
+    speed: 800,
     autoplayTimeout: 6000,
     nav: false,
     slideBy: "page",
     arrowKeys: true,
     swipeAngle: false,
+    mouseDrag: true,
   });
 });
 
