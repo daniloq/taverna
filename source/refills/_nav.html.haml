@@ -15,20 +15,22 @@
         .ui.dropdown
           %span Menus
           .menu
+            .item
+              = link_to 'Brunch', '/brunch.html'
+            .item
+              = link_to 'All Day', '/all-day.html'
+            .item
+              = link_to 'Wine', '/wine-bottles.html'
             -# .item
-            -#   = link_to 'Dinner', '/dinner.html', class: 'active'
+            -#   = link_to 'Wine By The Glass', '/wine-glasses.html'
             -# .item
-            -#   = link_to 'Lunch', '/lunch.html'
-            -# .item
-            -#   = link_to 'Brunch', '/brunch.html'
+            -#   = link_to 'Craft Cocktails', '/craft-cocktails.html'
+            .item
+              = link_to 'Happy Hour', '/happy-hour.html'
             -# .item
             -#   = link_to 'Dessert', '/dessert.html'
-            .item
-              = link_to 'Food & Drink', '/prepared-food.html'
-            .item
-              = link_to 'Bottled Wine', '/wine-liquor.html'
-            .item
-              = link_to 'Happy Hour', '/groceries.html'
+            -# .item
+            -#   = link_to 'Kids', '/kids.html'
       %li
         = link_to 'Reservations', '#resy'
       -# %li
@@ -45,9 +47,14 @@
       .close
         %i.ion-close-round
       = link_to 'Order Now', '/order-online/', {class: "button"}
-      = link_to 'Food & Drink', '/prepared-food.html'
-      = link_to 'Bottled Wine', '/wine-liquor.html'
-      = link_to 'Happy Hour', '/groceries.html'
+      = link_to 'Brunch', '/brunch.html'
+      = link_to 'All Day', '/all-day.html'
+      = link_to 'Wine', '/wine-bottles.html'
+      -# = link_to 'Wine By The Glass', '/wine-glasses.html'
+      -# = link_to 'Craft Cocktails', '/craft-cocktails.html'
+      = link_to 'Happy Hour', '/happy-hour.html'
+      -# = link_to 'Dessert', '/dessert.html'
+      -# = link_to 'Kids', '/kids.html'
       = link_to 'About', '/about.html'
       = link_to 'Gift Cards', '/gift-cards.html'
       = link_to 'Reservations', '#resy'

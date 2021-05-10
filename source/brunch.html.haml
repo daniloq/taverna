@@ -1,0 +1,37 @@
+= partial 'refills/nav'
+
+.prepared
+  %section.main-content
+    .wrapper
+      %article
+        %h1.f2.display Menus
+        %p Your health and safety is of utmost importance to us. We are now offering socially-distant dining, both inside the restaurant and on our patio.
+        %p Prefer to dine at home?  Enjoy free delivery to most Jacksonville neighborhoods or stop by the restaurant for curbside pickup.
+        = link_to 'Order Pickup or Delivery', '/order-online/', {class: "button alt"}
+        %p You can also call 904.398.3005 to place your order.
+        = image_tag 'images/stamp.png', class: 'stamp'
+        %script(data-menu_desc_background_color="#ffffff" data-primary_background_color="#ffffff" data-display_menu="1269668" data-hide_cover_photo="true" data-hide_disclaimer="true" data-location="taverna-35" data-api_key="ke09z8icq4xu8uiiccighy1bw" id="singleplatform-menu" src="https://menus.singleplatform.com/widget")
+
+      %aside
+        %nav.menu-nav
+          %ul
+            %li
+              = link_to 'Brunch', '/brunch.html'
+            %li
+              = link_to 'All Day', '/all-day.html'
+            %li
+              = link_to 'Wine', '/wine-bottles.html'
+            -# %li
+            -#   = link_to 'Wine By The Glass', '/wine-glasses.html'
+            -# %li
+            -#   = link_to 'Craft Cocktails', '/craft-cocktails.html', class: 'active'
+            %li
+              = link_to 'Happy Hour', '/happy-hour.html'
+            -# %li
+            -#   = link_to 'Dessert', '/dessert.html'
+            -# %li
+            -#   = link_to 'Kids', '/kids.html'
+
+  = partial 'refills/resy'
+
+  = partial 'refills/footer'
